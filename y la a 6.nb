@@ -1,0 +1,1977 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     69217,       1967]
+NotebookOptionsPosition[     68972,       1954]
+NotebookOutlinePosition[     69314,       1969]
+CellTagsIndexPosition[     69271,       1966]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"-", 
+     FractionBox[
+      RowBox[{"\[Gamma]", " ", "\[Rho]0"}], "4"]}], "+", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", "\[Rho]0"}], 
+     RowBox[{"4", " ", 
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        SuperscriptBox["x", "2"]}], ")"}]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", "\[Rho]0"}], 
+     RowBox[{"4", " ", 
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        SuperscriptBox["x", "2"]}], ")"}]}]], "-", 
+    RowBox[{
+     FractionBox["1", "2"], " ", "k", " ", 
+     RowBox[{"\[Rho]0", "\[CenterDot]", "b"}], " ", 
+     SuperscriptBox["b", "\[Dagger]"]}], "+", 
+    RowBox[{
+     FractionBox["1", "2"], " ", "k", " ", 
+     RowBox[{"b", "\[CenterDot]", "\[Rho]0"}], " ", 
+     SuperscriptBox["b", "\[Dagger]"]}]}], ",", "0", ",", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", "b"}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "3"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", "b"}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "3"]}]], "-", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{"\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b"}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "3"]}]], "-", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{"\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b"}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "3"]}]], "-", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       "\[Rho]0"}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "3"]}]], "-", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       "\[Rho]0"}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "3"]}]], "-", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0"}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "3"]}]], "-", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0"}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "3"]}]], "-", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{"\[Rho]0", "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "3"]}]], "-", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{"\[Rho]0", "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "3"]}]], "+", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "3"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "3"]}]]}], ",", "0", ",", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "2"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{"5", " ", 
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "2"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "2"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "2"], "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{"5", " ", 
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "2"], "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "2"], "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "-", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", "b", 
+       "\[CenterDot]", "\[Rho]0", "\[CenterDot]", "b"}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", "b", 
+       "\[CenterDot]", "\[Rho]0", "\[CenterDot]", "b"}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", "b", 
+       "\[CenterDot]", "\[Rho]0", "\[CenterDot]", "b"}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "-", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", "b"}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", "b"}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", "b"}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "-", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "b"}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "b"}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "b"}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "-", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"]}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"]}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "-", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "-", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "-", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "-", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+      "b", "\[CenterDot]", "\[Rho]0", "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"]}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+      "b", "\[CenterDot]", "\[Rho]0", "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"]}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{
+      "b", "\[CenterDot]", "\[Rho]0", "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "-", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", "b"}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", "b"}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", "b"}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "-", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b"}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b"}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b"}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b"}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{"5", " ", 
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b"}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b"}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b"}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{"5", " ", 
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b"}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b"}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{"5", " ", 
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{"5", " ", 
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "-", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "-", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"8", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "5"]}]]}], ",", "0", ",", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "3"], "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "3"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "3"], "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "3"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "3"], "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "3"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "6"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "3"], "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "3"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "3"], "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "3"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "3"], "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "3"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "3"], "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "3"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "6"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "3"], "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "3"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "b"}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "b"}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "b"}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "6"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "b"}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "b"}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "b"}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "b"}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "6"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "b"}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", "b", 
+       "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", "b", 
+       "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", "b", 
+       "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "6"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", "b", 
+       "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "6"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", "b", 
+       "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", "b", 
+       "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", "b", 
+       "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "6"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", "b", 
+       "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "6"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       "b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       "b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       "b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "6"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       "b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "6"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", "b", 
+       "\[CenterDot]", "\[Rho]0", "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b"}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", "b", 
+       "\[CenterDot]", "\[Rho]0", "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b"}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", "b", 
+       "\[CenterDot]", "\[Rho]0", "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b"}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "6"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", "b", 
+       "\[CenterDot]", "\[Rho]0", "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b"}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b"}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b"}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b"}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "6"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b"}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "b"}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "b"}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "b"}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "6"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"], "\[CenterDot]", 
+       "b"}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "6"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "6"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "6"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "6"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", 
+       SuperscriptBox["b", "2"], "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "6"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SuperscriptBox["b", "\[Dagger]"], ")"}], "2"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b"}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b"}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b"}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "6"], " ", "\[Gamma]", " ", 
+      RowBox[{
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "\[Rho]0", 
+       "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b"}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{"\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"16", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "4"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["x", "6"], " ", "\[Gamma]", " ", 
+      RowBox[{"b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       "\[Rho]0", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"], "\[CenterDot]", "b", "\[CenterDot]", 
+       SuperscriptBox["b", "\[Dagger]"]}]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["x", "2"]}], ")"}], "7"]}]]}]}], "}"}]], "Output",
+ CellChangeTimes->{3.7672495657558885`*^9, 3.7672496087241926`*^9, 
+  3.7672504781827493`*^9, 3.767265120245243*^9, 3.7672651649910707`*^9, 
+  3.7674364404739447`*^9}]
+},
+WindowSize->{1350, 685},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 68410, 1932, 1173, "Output"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
